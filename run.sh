@@ -28,10 +28,10 @@ MMD_FN=$(echo $PDF_FN | sed 's/pdf/mmd/g')
 echo $MMD_FN
 
 # Translate English to Korean
-python translate_mmd.py $MMD_FN
+python3 translate_mmd.py $MMD_FN
 
 # Ready the templates
-python ready_templates.py $MMD_FN
+python3 ready_templates.py $MMD_FN
 
 # Git add
 git add papers/$ARXIV_ID
